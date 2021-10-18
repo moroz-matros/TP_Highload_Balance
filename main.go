@@ -10,7 +10,7 @@ func main() {
 	m := mux.NewRouter()
 	server := &http.Server{
 		Handler:     m,
-		Addr: 		"localhost"+":8080",
+		Addr: 		"localhost"+":80",
 	}
 
 	m.HandleFunc("/", Handle)
